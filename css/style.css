@@ -384,6 +384,9 @@ ul {
 .list li {
     list-style-type: circle
 }
+.input-row {
+    padding-bottom: 20px;
+}
 
 .input-row:after {
     content: " ";
@@ -483,7 +486,7 @@ p>a:hover {
 #submit-btn:hover:after,
 .form-control,
 input[type=submit]:hover {
-    color: #000!important
+    color: #ffffff!important
 }
 
 #compact-menu,
@@ -555,7 +558,7 @@ body:not(.single-post) a:hover .left-arrow:after {
 
 .portfolio-list .prjct-item a:after,
 .post-article .img-holder .caption {
-    background: rgba(71, 71, 71, .85);
+    background: rgba(51, 51, 51, 0.90);
     -webkit-transition: all .25s ease;
     -moz-transition: all .25s ease;
     -o-transition: all .25s ease;
@@ -758,7 +761,6 @@ body.fadeOut {
 #navbar,
 .navbar-header {
     flex-grow: 1;
-    width: 49.5%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -767,21 +769,21 @@ body.fadeOut {
     align-items: center
 }
 
+#navbar{
+    width: 79.5%;
+}
+
+.navbar-header{
+    width: 19.5%;
+}
+
 .nav.navbar-nav {
     width: 100%;
     padding-right: 0
 }
 
-#header .navbar-nav>li {
-    margin-bottom: 0!important
-}
-
 .navbar-nav>li {
-    margin: 0 14% 0 0
-}
-
-.navbar-nav>li:last-child {
-    margin-right: -15px
+    margin: 2.5% 5%;
 }
 
 .navbar-nav>li>a {
@@ -978,6 +980,10 @@ body.fadeOut {
 #main .big-heading p {
     width: 90%;
     margin: 0 auto
+}
+
+#main .big-heading img {
+    margin: auto;
 }
 
 #main .big-heading h1,
@@ -2143,7 +2149,7 @@ body.fltrs-fx-curtain .filter-nav.bye {
 }
 
 .cnt-slider {
-    height: 300px;
+    height: 420px;
     overflow: hidden
 }
 
@@ -2226,7 +2232,7 @@ body.fltrs-fx-curtain .filter-nav.bye {
 .cnt-slider .carousel-inner .carousel-caption {
     width: 45%;
     margin: 0 auto;
-    top: 50%;
+    top: 25%;
     left: 0;
     right: 0;
     padding-bottom: 40px;
@@ -2263,7 +2269,7 @@ body.fltrs-fx-curtain .filter-nav.bye {
 }
 
 .cnt-slider .carousel {
-    height: 50%;
+    height: 100%;
     font-size: 20px;
     line-height: 1.5em;
     text-align: center;
@@ -3983,8 +3989,6 @@ blockquote q em {
 
 form label {
     font-size: 13px;
-    color: #333;
-    padding-left: 9px;
     opacity: .9
 }
 
@@ -4442,7 +4446,7 @@ textarea:-ms-input-placeholder {
 
 @media screen and (min-width:1920px) {
     .cnt-slider .carousel-inner .carousel-caption {
-        width: 30%
+        width: 50%
     }
 }
 
@@ -4532,7 +4536,7 @@ textarea:-ms-input-placeholder {
         margin: -75px 0 0
     }
     .navbar-nav>li {
-        margin: 0 9% 0 0
+        margin: 2.5% 5%;
     }
     #main,
     .home #main {
@@ -4826,9 +4830,6 @@ textarea:-ms-input-placeholder {
     }
     span.menu-counter {
         font-size: 13px
-    }
-    .compact-menu-enabled .navbar-nav>li:first-child {
-        margin-left: 0
     }
     .compact-menu-enabled .navbar-nav>li {
         margin-bottom: 5vh
@@ -5199,7 +5200,7 @@ textarea:-ms-input-placeholder {
         height: inherit
     }
     .cnt-slider .carousel-inner .carousel-caption {
-        top: 50%;
+        top: 35%;
         padding-bottom: 0;
         padding-top: 0
     }
@@ -5207,10 +5208,10 @@ textarea:-ms-input-placeholder {
         font-size: 18px
     }
     .cnt-slider .carousel-indicators {
-        top: 90%
+        top: 94%;
     }
     .cnt-slider {
-        height: 230px;
+        height: 400px;
         position: relative;
         overflow: hidden
     }
@@ -5435,3 +5436,64 @@ body.fadeOut {
         transform: translateY(0)
     }
 }
+
+.responsive-table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
+  .responsive-table td, .responsive-table th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #707070;
+  }
+
+  .responsive-table td, .responsive-table th {
+    width: 15%;
+  }
+  
+  /**
+   * Small Screen Only
+
+  @media (max-width: 600px) {
+    .responsive-table {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .responsive-table thead {
+      display: flex;
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .responsive-table tbody {
+      display: flex;
+      position: relative;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+    .responsive-table tr {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      position: relative;
+      z-index: -1;
+    }
+    .responsive-table td {
+      border-right: none;
+    }
+    .responsive-table th {
+      text-align: left;
+    }
+
+    .responsive-table td:first-child, .responsive-table th:first-child {
+      width: auto;
+    }
+    .responsive-table td:last-child, .responsive-table th:last-child {
+      border-bottom: 0;
+    }
+  }
+     */
