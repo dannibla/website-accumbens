@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Jua|Rancho');
+
 [class*=" icon-"]:before,
 [class^=icon-]:before,
 [data-icon]:before {
@@ -411,7 +413,8 @@ ul {
 }
 
 body {
-    font-family: apercu_regular, HelveticaNeue, helvetica, Arial, sans-serif!important;
+    font-family: 'Jua', sans-serif;
+    letter-spacing: .1em;
     color: #999
 }
 
@@ -432,7 +435,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: Lyon, times, serif
+    font-family: 'Rancho', cursive;
 }
 
 #page-title,
@@ -470,6 +473,11 @@ p>a:hover {
     color: #fff
 }
 
+h4.highlight {
+    font-size: 36px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
 .highlight-2,
 ::selection {
     color: #eee
@@ -484,9 +492,8 @@ p>a:hover {
 }
 
 #submit-btn:hover:after,
-.form-control,
 input[type=submit]:hover {
-    color: #ffffff!important
+    color: #ffffff;
 }
 
 #compact-menu,
@@ -524,7 +531,7 @@ p>a:after {
 .single-post .link-area,
 .single-post .link-area:before,
 body:not(.single-post) a:hover .arrow {
-    background: #eee
+    background:#14b9e0;
 }
 
 .navbar-nav>li>a:active,
@@ -536,7 +543,26 @@ body:not(.single-post) a:hover .arrow {
 .navbar-nav>li.active>a,
 .navbar-nav>li.hover>a,
 .navbar-nav>li.open>a {
-    color: #eee
+    color: #14b9e0
+}
+
+@media only screen and (max-width: 415px) {
+    #submit-btn .arrow,
+    .blog-sidebar .widget a:hover .arrow,
+    .navbar-nav>li.active>a:after,
+    .navbar-nav>li.hover>a:after,
+    .navbar-nav>li.open>a:after,
+    .navbar-nav>li>a:hover:after,
+    .single-post .link-area,
+    .single-post .link-area:before,
+    body:not(.single-post) a:hover .arrow {
+        background: #eee;
+    }
+    .navbar-nav>li.active>a,
+    .navbar-nav>li.hover>a,
+    .navbar-nav>li.open>a {
+        color: #eee
+    }
 }
 
 #submit-btn .right-arrow:after,
@@ -988,7 +1014,8 @@ body.fadeOut {
 
 #main .big-heading h1,
 .intro h1 {
-    font-size: 4.35vw
+    font-size: 4.35vw;
+    font-family: 'Fredericka the Great', cursive;
 }
 
 #main .big-heading p {
@@ -1299,7 +1326,7 @@ body.fadeOut {
         margin-bottom: 50px
     }
     .mar-btm-lg {
-        margin-bottom: 75px
+        margin-bottom: 40px
     }
     .mar-btm-xlg {
         margin-bottom: 125px
@@ -3945,7 +3972,7 @@ blockquote q em {
     border: 0;
     border-radius: 0;
     border-bottom: none;
-    opacity: .3;
+    opacity: 0.7;
     -webkit-appearance: none;
     -moz-appearance: none;
     -webkit-box-shadow: none!important;
@@ -3988,8 +4015,7 @@ blockquote q em {
 }
 
 form label {
-    font-size: 13px;
-    opacity: .9
+    color: #fff;
 }
 
 .error .form-control {
@@ -4741,7 +4767,8 @@ textarea:-ms-input-placeholder {
         padding: 40px 0
     }
     .logo {
-        order: 1
+        order: 1;
+        font-size:150%;
     }
     .compact-menu-opened #wrapper {
         z-index: 100;
@@ -5446,54 +5473,6 @@ body.fadeOut {
     padding: 10px;
     text-align: center;
     border: 1px solid #707070;
-  }
-
-  .responsive-table td, .responsive-table th {
     width: 15%;
+    color: #fff;
   }
-  
-  /**
-   * Small Screen Only
-
-  @media (max-width: 600px) {
-    .responsive-table {
-      display: flex;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .responsive-table thead {
-      display: flex;
-      flex-shrink: 0;
-      position: relative;
-    }
-
-    .responsive-table tbody {
-      display: flex;
-      position: relative;
-      overflow-x: auto;
-      overflow-y: hidden;
-      -webkit-overflow-scrolling: touch;
-    }
-    .responsive-table tr {
-      display: flex;
-      flex-direction: column;
-      flex-shrink: 0;
-      position: relative;
-      z-index: -1;
-    }
-    .responsive-table td {
-      border-right: none;
-    }
-    .responsive-table th {
-      text-align: left;
-    }
-
-    .responsive-table td:first-child, .responsive-table th:first-child {
-      width: auto;
-    }
-    .responsive-table td:last-child, .responsive-table th:last-child {
-      border-bottom: 0;
-    }
-  }
-     */
