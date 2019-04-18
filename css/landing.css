@@ -1,0 +1,1470 @@
+﻿a, b, body, center, div, em, font, html, i, img, s, span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0
+}
+
+body {
+    line-height: 1
+}
+
+:focus {
+    outline: 0
+}
+
+img.lazyloading {
+    opacity: 0;
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+    background-color: transparent !important;
+    border-color: transparent !important
+}
+
+img.lazyloading {
+    opacity: .6;
+    -webkit-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+    background-image: url(http://www.thismanslife.co.uk/images/spinner.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50px 50px
+}
+
+@supports (mix-blend-mode:multiply) {
+    img.lazyloading {
+        background-image: url(http://www.thismanslife.co.uk/images/spinner.svg)
+    }
+}
+
+.block {
+    display: block
+}
+
+.callout {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.85);
+    margin: 1em auto 3em auto;
+    max-width: 320px;
+    width: 320px;
+    height: 320px
+}
+
+@supports ((-webkit-backdrop-filter:blur(20px)) or (backdrop-filter:blur(20px))) {
+    .callout {
+        background-color: rgba(0,0,0,.45);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px)
+    }
+}
+
+.display640x400 {
+    margin: 8% auto 8% auto;
+    width: 100%;
+    max-width: 704px;
+    padding-bottom: 40%;
+    max-height: 630px;
+    padding-top: 33px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    position: relative
+}
+
+    .display640x400 * {
+        max-width: 640px;
+        max-height: 400px !important;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0
+    }
+
+    .display640x400 img {
+        height: 400px;
+        max-height: calc(52.5VW) !important
+    }
+
+.faultyflicker {
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+    .faultyflicker img {
+        height: 400px;
+        max-height: calc(52.5VW) !important;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-transition: all .3s cubic-bezier(.19,1,.22,1),-webkit-filter .6s cubic-bezier(.19,1,.22,1);
+        transition: all .3s cubic-bezier(.19,1,.22,1),-webkit-filter .6s cubic-bezier(.19,1,.22,1);
+        transition: all .3s cubic-bezier(.19,1,.22,1),filter .6s cubic-bezier(.19,1,.22,1);
+        transition: all .3s cubic-bezier(.19,1,.22,1),filter .6s cubic-bezier(.19,1,.22,1),-webkit-filter .6s cubic-bezier(.19,1,.22,1)
+    }
+
+    .faultyflicker:active {
+        -webkit-filter: brightness(800%);
+        filter: brightness(800%);
+        -webkit-transform: scale(1.01);
+        transform: scale(1.01)
+    }
+
+.span1 {
+    width: 4.666%
+}
+
+.span2 {
+    width: 13.333%
+}
+
+.span3 {
+    width: 22%
+}
+
+.span4 {
+    width: 30.666%
+}
+
+.span5 {
+    width: 39.333%
+}
+
+.span6 {
+    width: 48%
+}
+
+.span7 {
+    width: 56.666%
+}
+
+.span8 {
+    width: 65.333%
+}
+
+.span9 {
+    width: 74%
+}
+
+.span10 {
+    width: 82.666%
+}
+
+.span11 {
+    width: 91.333%
+}
+
+@-webkit-keyframes openvert {
+    0% {
+        max-height: 0;
+        padding: 0
+    }
+
+    100% {
+        max-height: 3000px;
+        padding-top: 7%;
+        padding-bottom: 11%
+    }
+}
+
+@keyframes openvert {
+    0% {
+        max-height: 0;
+        padding: 0
+    }
+
+    100% {
+        max-height: 3000px;
+        padding-top: 7%;
+        padding-bottom: 11%
+    }
+}
+
+.openvert {
+    -webkit-animation: .9s openvert;
+    animation: .9s openvert;
+    overflow-y: hidden
+}
+
+@-webkit-keyframes slidein {
+    from {
+        -webkit-transform: translateY(-70px);
+        transform: translateY(-70px)
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@keyframes slidein {
+    from {
+        -webkit-transform: translateY(-70px);
+        transform: translateY(-70px)
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+.slidein {
+    -webkit-animation: .6s slidein cubic-bezier(.19,1,.22,1);
+    animation: .6s slidein cubic-bezier(.19,1,.22,1)
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.fadein {
+    -webkit-animation: .4s fadein;
+    animation: .4s fadein
+}
+
+@-webkit-keyframes logoheroanim {
+    0 {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes logoheroanim {
+    0 {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.presentimage {
+    -webkit-animation: presentimage 1.5s ease-out;
+    animation: presentimage 1.5s ease-out
+}
+
+@-webkit-keyframes pulsefade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes pulsefade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.pulsefade {
+    -webkit-animation: .4s infinite alternate ease-in-out pulsefade;
+    animation: .4s infinite alternate ease-in-out pulsefade
+}
+
+@-webkit-keyframes fadeslideup {
+    0% {
+        -webkit-transform: translateY(150px);
+        transform: translateY(150px);
+        opacity: 0
+    }
+
+    50% {
+        -webkit-transform: translateY(150px);
+        transform: translateY(150px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeslideup {
+    0% {
+        -webkit-transform: translateY(150px);
+        transform: translateY(150px);
+        opacity: 0
+    }
+
+    50% {
+        -webkit-transform: translateY(150px);
+        transform: translateY(150px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+.fadeslideup {
+    -webkit-animation: 2s cubic-bezier(.7,0,.3,1) fadeslideup;
+    animation: 2s cubic-bezier(.7,0,.3,1) fadeslideup
+}
+
+@-webkit-keyframes strategyplannerbgslider {
+    0% {
+        background-position: 0 50%
+    }
+
+    100% {
+        background-position: -3500px 50%
+    }
+}
+
+@keyframes strategyplannerbgslider {
+    0% {
+        background-position: 0 50%
+    }
+
+    100% {
+        background-position: -3500px 50%
+    }
+}
+
+.strategyplannerbgslider {
+    -webkit-animation: 120s infinite linear strategyplannerbgslider;
+    animation: 120s infinite linear strategyplannerbgslider
+}
+
+@-webkit-keyframes scrollprompt {
+    0% {
+        -webkit-transform: translateY(-140px);
+        transform: translateY(-140px);
+        opacity: 0
+    }
+
+    20% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+
+    30% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+
+    35% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+        opacity: 1
+    }
+
+    40% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 1
+    }
+
+    45% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+        opacity: 1
+    }
+
+    50% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 1
+    }
+
+    55% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+        opacity: 1
+    }
+
+    60% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 1
+    }
+
+    65% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+
+    75% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-filter: blur(0);
+        filter: blur(0)
+    }
+
+    90% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+        -webkit-filter: blur(20px);
+        filter: blur(20px)
+    }
+
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+        -webkit-filter: blur(20px);
+        filter: blur(20px)
+    }
+}
+
+@keyframes scrollprompt {
+    0% {
+        -webkit-transform: translateY(-140px);
+        transform: translateY(-140px);
+        opacity: 0
+    }
+
+    20% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+
+    30% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+
+    35% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+        opacity: 1
+    }
+
+    40% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 1
+    }
+
+    45% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+        opacity: 1
+    }
+
+    50% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 1
+    }
+
+    55% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+        opacity: 1
+    }
+
+    60% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 1
+    }
+
+    65% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+
+    75% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-filter: blur(0);
+        filter: blur(0)
+    }
+
+    90% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+        -webkit-filter: blur(20px);
+        filter: blur(20px)
+    }
+
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+        -webkit-filter: blur(20px);
+        filter: blur(20px)
+    }
+}
+
+.scrollprompt {
+    opacity: 0;
+    -webkit-animation: 3s .8s ease scrollprompt;
+    animation: 3s .8s ease scrollprompt;
+    background-color: rgba(0,0,0,.4);
+    background-image: url(http://www.thismanslife.co.uk/images/downArrowIcon.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 500px 500px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999999999999999999;
+    bottom: 140px;
+    left: 50%;
+    margin-left: -70px
+}
+
+@supports ((-webkit-backdrop-filter:blur(20px)) or (backdrop-filter:blur(20px))) {
+    .scrollprompt {
+        background-color: rgba(0,0,0,.2);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px)
+    }
+}
+
+@-webkit-keyframes faultyflicker {
+    0% {
+        opacity: .4
+    }
+
+    1% {
+        opacity: .2
+    }
+
+    2% {
+        opacity: .4
+    }
+
+    3% {
+        opacity: 1
+    }
+
+    10% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .4
+    }
+
+    20% {
+        opacity: .6
+    }
+
+    21% {
+        opacity: .4
+    }
+
+    22% {
+        opacity: 1
+    }
+
+    23% {
+        opacity: .4
+    }
+
+    24% {
+        opacity: 0
+    }
+
+    25% {
+        opacity: .4
+    }
+
+    26% {
+        opacity: 1
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    41% {
+        opacity: .4
+    }
+
+    42% {
+        opacity: 1
+    }
+
+    43% {
+        opacity: 0
+    }
+
+    44% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes faultyflicker {
+    0% {
+        opacity: .4
+    }
+
+    1% {
+        opacity: .2
+    }
+
+    2% {
+        opacity: .4
+    }
+
+    3% {
+        opacity: 1
+    }
+
+    10% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .4
+    }
+
+    20% {
+        opacity: .6
+    }
+
+    21% {
+        opacity: .4
+    }
+
+    22% {
+        opacity: 1
+    }
+
+    23% {
+        opacity: .4
+    }
+
+    24% {
+        opacity: 0
+    }
+
+    25% {
+        opacity: .4
+    }
+
+    26% {
+        opacity: 1
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    41% {
+        opacity: .4
+    }
+
+    42% {
+        opacity: 1
+    }
+
+    43% {
+        opacity: 0
+    }
+
+    44% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.faultyflicker {
+    -webkit-animation: 1s infinite alternate linear faultyflicker;
+    animation: 1s infinite alternate linear faultyflicker
+}
+/*
+body, html {
+    background-color: #a2a29f;
+    margin: 0;
+    height: 100%
+}
+
+body {
+    font-family: Karla,-apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: .9em;
+    line-height: 1.5em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-align: center;
+    background-color: #fff;
+    color: #5d5e5a
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-repeat: no-repeat
+}
+
+a {
+    color: #f6554c;
+    text-decoration: none
+}
+
+    a:hover {
+        text-decoration: underline
+    }
+
+img {
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block
+}
+
+/*
+#content {
+    background-color: #f3f3f0
+}
+*/
+
+#herosplash {
+    top: 0;
+    left: 0;
+    right: 0;
+    height:100vh;
+    bottom: 180px;
+    position: absolute
+}
+
+.fixed #herosplash {
+    display: none
+}
+
+    .fixed #herosplash * {
+        -webkit-animation: none !important;
+        animation: none !important
+    }
+
+#illustration {
+    background-color: #22201e
+}
+
+    #illustration img {
+        display: inline-block;
+        -webkit-box-shadow: 0 60px 140px -20px rgba(0,0,0,.6);
+        box-shadow: 0 60px 140px -20px rgba(0,0,0,.6)
+    }
+
+        #illustration img.lazyloading {
+            min-width: 100%;
+            min-height: 100%;
+            -webkit-box-shadow: none;
+            box-shadow: none
+        }
+
+        #illustration img[class=sidebyside2] {
+            margin: 0;
+            max-width: 100%;
+            -webkit-box-shadow: none;
+            box-shadow: none
+        }
+
+#photography {
+    background-color: #fff
+}
+
+@supports (-ms-ime-align:auto) {
+    .photoviewer-on {
+        cursor: url(http://www.thismanslife.co.uk/images/cursorCloseIcon.cur),pointer !important
+    }
+
+    .contentviewer-on {
+        cursor: url(http://www.thismanslife.co.uk/images/cursorCloseIcon.cur),pointer !important
+    }
+}
+
+#photoviewer {
+    background-color: rgba(15,15,15,.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 9999999999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+    #photoviewer img {
+        max-height: 96%;
+        max-width: 96%;
+        -webkit-transform: scale(.85);
+        transform: scale(.85);
+        -webkit-box-shadow: 0 20px 100px rgba(0,0,0,.6);
+        box-shadow: 0 20px 100px rgba(0,0,0,.6);
+        -webkit-transition: -webkit-transform .3s cubic-bezier(.7,0,.3,1);
+        transition: -webkit-transform .3s cubic-bezier(.7,0,.3,1);
+        transition: transform .3s cubic-bezier(.7,0,.3,1);
+        transition: transform .3s cubic-bezier(.7,0,.3,1),-webkit-transform .3s cubic-bezier(.7,0,.3,1)
+    }
+
+    #photoviewer.photoviewer-on {
+        cursor: url(http://www.thismanslife.co.uk/images/cursorCloseIcon.cur) 22 22,pointer;
+        opacity: 1;
+        height: 100%;
+        -webkit-transition: opacity .3s cubic-bezier(.7,0,.3,1);
+        transition: opacity .3s cubic-bezier(.7,0,.3,1)
+    }
+
+        #photoviewer.photoviewer-on img {
+            -webkit-transform: scale(1);
+            transform: scale(1)
+        }
+
+#contentviewer {
+    background-color: rgba(15,15,15,.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 9999999999
+}
+
+    #contentviewer.contentviewer-on {
+        cursor: url(http://www.thismanslife.co.uk/images/cursorCloseIcon.cur) 22 22,pointer;
+        opacity: 1;
+        height: 100%;
+        -webkit-transition: opacity .4s cubic-bezier(.19,1,.22,1);
+        transition: opacity .4s cubic-bezier(.19,1,.22,1)
+    }
+
+#about {
+    background-color: #fafaf9
+}
+
+    #about #bio {
+        text-align: left;
+        padding-top: 7%;
+        padding-bottom: 11%;
+        padding-top: 0;
+        line-height: 1.4em
+    }
+
+        #about #bio #jamesmellers {
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 0 3em 0;
+            -webkit-transform: scale(2.2);
+            transform: scale(2.2)
+        }
+
+            #about #bio #jamesmellers span {
+                display: block;
+                -webkit-transition: all .15s ease-in-out;
+                transition: all .15s ease-in-out
+            }
+
+            #about #bio #jamesmellers:hover span {
+                background-color: #fff
+            }
+
+@supports (mix-blend-mode:multiply) {
+    #about #bio #jamesmellers {
+        background-color: #f53e34;
+        background-image: -webkit-gradient(linear,left top,right top,from(#ff6148),to(#f73c64));
+        background-image: linear-gradient(to right,#ff6148,#f73c64)
+    }
+
+        #about #bio #jamesmellers img {
+            mix-blend-mode: multiply
+        }
+}
+
+#siteheader {
+    display: block;
+    position: absolute;
+    height: 180px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff
+}
+
+    #siteheader a {
+        text-decoration: none
+    }
+
+.fixed #siteheader {
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 999999999;
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 0;
+    margin: 0;
+    line-height: normal;
+    border-top: 3px solid rgba(0,0,0,.1);
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-animation: .6s slidein cubic-bezier(.19,1,.22,1);
+    animation: .6s slidein cubic-bezier(.19,1,.22,1)
+}
+
+    .fixed #siteheader * {
+        color: #afafaf !important
+    }
+
+    .fixed #siteheader #navigation {
+        float: right
+    }
+
+    .fixed #siteheader a, .fixed #siteheader div {
+        position: static;
+        margin: 0;
+        padding: 0;
+        border: none;
+        max-width: none;
+        width: auto;
+        height: auto;
+        display: inline-block
+    }
+
+    .fixed #siteheader a {
+        margin: -3px 0 0 0 !important;
+        line-height: 60px;
+        padding: 0 11px;
+        border-top: 3px solid transparent;
+        -webkit-transition: border .15s cubic-bezier(.7,0,.3,1);
+        transition: border .15s cubic-bezier(.7,0,.3,1);
+        border-style: solid;
+        border-width: 3px 0 0 0;
+        border-color: rgba(162,162,159,0)
+    }
+
+        .fixed #siteheader a:hover {
+            border-color: #f6554c !important;
+            -webkit-transition: border 25ms cubic-bezier(.7,0,.3,1);
+            transition: border 25ms cubic-bezier(.7,0,.3,1)
+        }
+
+        .fixed #siteheader a:active {
+            border-color: #f6554c !important
+        }
+
+        .fixed #siteheader a.on {
+            color: #242422;
+            border-color: #f6554c;
+            -webkit-transition: border .1s cubic-bezier(.7,0,.3,1);
+            transition: border .1s cubic-bezier(.7,0,.3,1)
+        }
+
+    .fixed #siteheader:hover a.on {
+        border-color: #a2a29f
+    }
+
+@-webkit-keyframes spinit1 {
+    2% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    48% {
+        -webkit-transform: rotate(179.99deg);
+        transform: rotate(179.99deg)
+    }
+
+    52% {
+        -webkit-transform: rotate(179.99deg);
+        transform: rotate(179.99deg)
+    }
+
+    98% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+}
+
+@keyframes spinit1 {
+    2% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    48% {
+        -webkit-transform: rotate(179.99deg);
+        transform: rotate(179.99deg)
+    }
+
+    52% {
+        -webkit-transform: rotate(179.99deg);
+        transform: rotate(179.99deg)
+    }
+
+    98% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+}
+
+@-webkit-keyframes spinit2 {
+    2% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    48% {
+        -webkit-transform: rotate(179.99deg);
+        transform: rotate(179.99deg)
+    }
+
+    52% {
+        -webkit-transform: rotate(179.99deg);
+        transform: rotate(179.99deg)
+    }
+
+    98% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+}
+
+@keyframes spinit2 {
+    2% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    48% {
+        -webkit-transform: rotate(179.99deg);
+        transform: rotate(179.99deg)
+    }
+
+    52% {
+        -webkit-transform: rotate(179.99deg);
+        transform: rotate(179.99deg)
+    }
+
+    98% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+}
+
+@supports (mix-blend-mode:color-dodge) {
+    .herosplash1 #herosplash.easteregg div {
+        mix-blend-mode: color-dodge
+    }
+
+        .herosplash1 #herosplash.easteregg div div span {
+            border-color: #a0905c transparent transparent #a0905c
+        }
+}
+
+.herosplash1 #herosplash {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    color: #fff;
+    background-color: #f3f3f0;
+    background-image: url(../img/brain.png),-webkit-gradient(linear,right bottom,right top,from(#e52713),to(#f73c64));
+    background-image: url(../img/brain.png),linear-gradient(to top,#e52713,#f73c64);
+    background-size: auto 88%,80% 55%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    overflow: hidden
+}
+
+    .herosplash1 #herosplash.easteregg {
+        -webkit-transition: all .8s .2s cubic-bezier(.19,1,.22,1);
+        transition: all .8s .2s cubic-bezier(.19,1,.22,1);
+        background-size: auto 75%,100% 100%
+    }
+
+        .herosplash1 #herosplash.easteregg div div {
+            width: 460px;
+            height: 460px;
+            max-width: 460px;
+            min-width: 460px
+        }
+
+        .herosplash1 #herosplash.easteregg:before {
+            content: 'Accumbens';
+            text-align: center;
+        }
+
+        .herosplash1 #herosplash.easteregg:after {
+            content: 'Presented By Zeristos';
+            text-align: center;
+        }
+
+    .herosplash1 #herosplash:before {
+        content: 'Thismanslife';
+        text-transform: uppercase;
+        font-family: Montserrat,-apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+        font-size: 6em;
+        font-weight: 700;
+        letter-spacing: .02em;
+        text-rendering: optimizeLegibility;
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        left: 0;
+        right: 0;
+        line-height: 100px;
+        margin: -55px 0 0 0;
+        -webkit-transition: -webkit-transform .2s cubic-bezier(.19,1,.22,1);
+        transition: -webkit-transform .2s cubic-bezier(.19,1,.22,1);
+        transition: transform .2s cubic-bezier(.19,1,.22,1);
+        transition: transform .2s cubic-bezier(.19,1,.22,1),-webkit-transform .2s cubic-bezier(.19,1,.22,1)
+    }
+
+    .herosplash1 #herosplash:after {
+        content: 'Design in Mind';
+        text-transform: uppercase;
+        font-family: Montserrat,-apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+        font-size: 1.3em;
+        font-weight: 400;
+        letter-spacing: .2em;
+        text-rendering: optimizeLegibility;
+        position: absolute;
+        z-index: 6;
+        top: 50%;
+        left: 0;
+        right: 0;
+        line-height: 50px;
+        margin: 40px 0 0 0;
+        -webkit-transition: -webkit-transform .2s cubic-bezier(.19,1,.22,1);
+        transition: -webkit-transform .2s cubic-bezier(.19,1,.22,1);
+        transition: transform .2s cubic-bezier(.19,1,.22,1);
+        transition: transform .2s cubic-bezier(.19,1,.22,1),-webkit-transform .2s cubic-bezier(.19,1,.22,1)
+    }
+
+    .herosplash1 #herosplash > div {
+        opacity: .999;
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+        .herosplash1 #herosplash > div:before {
+            content: '';
+            display: block;
+            height: 42px;
+            margin-top: -114px;
+            position: absolute;
+            z-index: 7;
+            top: 50%;
+            left: 0;
+            right: 0;
+            background-image: url(http://www.thismanslife.co.uk/images/tmlLogo-white.svg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%
+        }
+
+        .herosplash1 #herosplash > div:after {
+            content: 'New';
+            text-transform: uppercase;
+            font-family: Montserrat,-apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+            font-size: 1.3em;
+            font-weight: 700;
+            letter-spacing: .2em;
+            text-rendering: optimizeLegibility;
+            color: #000;
+            display: block;
+            width: 150px;
+            height: 56px;
+            line-height: 56px;
+            position: absolute;
+            z-index: 8;
+            top: 50%;
+            right: 50%;
+            margin: -80px -420px 0 0;
+            background-image: url(http://www.thismanslife.co.uk/images/diamondBox.svg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain
+        }
+
+        .herosplash1 #herosplash > div > div {
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            height: 800px;
+            width: 800px;
+            max-width: 800px;
+            min-width: 800px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg)
+        }
+
+            .herosplash1 #herosplash > div > div span {
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 4px;
+                margin: 0;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                border-radius: 50%;
+                border-style: solid;
+                border-width: 18px;
+                border-color: #c7c8b8 transparent transparent #c7c8b8;
+                -webkit-animation-name: spinit1;
+                animation-name: spinit1;
+                -webkit-animation-duration: 30s;
+                animation-duration: 30s;
+                -webkit-animation-iteration-count: 6;
+                animation-iteration-count: 6;
+                -webkit-animation-direction: alternate;
+                animation-direction: alternate;
+                -webkit-animation-timing-function: cubic-bezier(.7,0,.3,1);
+                animation-timing-function: cubic-bezier(.7,0,.3,1);
+                -webkit-transition: all 1s cubic-bezier(.19,1,.22,1);
+                transition: all 1s cubic-bezier(.19,1,.22,1)
+            }
+
+@-webkit-keyframes presentimage {
+    0% {
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        opacity: 0
+    }
+
+    80% {
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes presentimage {
+    0% {
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        opacity: 0
+    }
+
+    80% {
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@media screen and (max-width:920px) {
+    #herosplash:before {
+        font-size: 3.6em !important
+    }
+
+    #herosplash > div:after {
+        margin: -65px -300px 0 0 !important
+    }
+
+    #about {
+        background-color: #fafaf9
+    }
+
+        #about #jamesmellers {
+            -webkit-transform: scale(1) !important;
+            transform: scale(1) !important
+        }
+}
+
+@media screen and (max-width:760px) {
+    * {
+        background-attachment: scroll !important
+    }
+
+    .display640x400 {
+        height: auto;
+        padding: 4.7% 4.7% 35% 4.7%;
+        margin-bottom: 0
+    }
+}
+
+@media screen and (max-width:625px) {
+    .fixed #siteheader {
+        border-top: none
+    }
+
+        .fixed #siteheader a {
+            line-height: 55px;
+            width: 58px
+        }
+
+        .fixed #siteheader #navigation {
+            -webkit-transition: background-color .5s ease-out,right .3s ease-out .5s;
+            transition: background-color .5s ease-out,right .3s ease-out .5s;
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            right: -100%;
+            width: 100%;
+            margin: 0 !important;
+            background-color: rgba(0,0,0,0) !important;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+    body.menunavon {
+        overflow: hidden
+    }
+
+        body.menunavon.fixed #siteheader #navigation {
+            -webkit-transition: right 0s ease 0s,background-color .4s ease-out,-webkit-backdrop-filter .8s ease-out;
+            transition: right 0s ease 0s,background-color .4s ease-out,-webkit-backdrop-filter .8s ease-out;
+            transition: right 0s ease 0s,background-color .4s ease-out,backdrop-filter .8s ease-out;
+            transition: right 0s ease 0s,background-color .4s ease-out,backdrop-filter .8s ease-out,-webkit-backdrop-filter .8s ease-out;
+            background-color: rgba(0,0,0,.9) !important;
+            right: 0
+        }
+
+    @supports ((-webkit-backdrop-filter:blur(12px)) or (backdrop-filter:blur(12px))) {
+        body.menunavon.fixed #siteheader #navigation {
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            background-color: rgba(0,0,0,.4) !important
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    #herosplash:after {
+        margin-top: 10px !important;
+        font-size: .8em !important
+    }
+
+    #herosplash:before {
+        font-size: 2em !important
+    }
+
+    #herosplash div:before {
+        margin-top: -90px !important
+    }
+
+    #herosplash > div {
+        -webkit-transform: scale(.7);
+        transform: scale(.7)
+    }
+
+        #herosplash > div:after {
+            display: none !important
+        }
+
+    #herosplash #hypno:before {
+        margin-top: -100px !important
+    }
+}
