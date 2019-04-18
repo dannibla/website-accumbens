@@ -1,4 +1,5 @@
-﻿a, b, body, center, div, em, font, html, i, img, s, span {
+﻿/*
+a, b, body, center, div, em, font, html, i, img, s, span {
     margin: 0;
     padding: 0;
     border: 0;
@@ -15,7 +16,7 @@ body {
 :focus {
     outline: 0
 }
-
+*/
 img.lazyloading {
     opacity: 0;
     -webkit-transform: scale(.9);
