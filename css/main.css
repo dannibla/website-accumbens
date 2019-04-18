@@ -13776,6 +13776,10 @@ body section .inner .maxWidth--title h2 {
     }
 }
 
+body section .inner .main-carousel {
+    min-height: 150px;
+}
+
 @media (max-width:992px) {
     body section .inner .main-carousel .flickity-viewport {
         transition: height .5s ease

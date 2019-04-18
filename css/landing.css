@@ -1153,9 +1153,9 @@ img {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     color: #fff;
-    background-color: #f3f3f0;
-    background-image: url(../img/brain.png),-webkit-gradient(linear,right bottom,right top,from(#e52713),to(#f73c64));
-    background-image: url(../img/brain.png),linear-gradient(to top,#e52713,#f73c64);
+    background-color: #ffffff;
+    background-image: url(../img/brain.png),-webkit-gradient(linear,right bottom,right top,from(#e52713),to(#e52713));
+    background-image: url(../img/brain.png),linear-gradient(to top,#e52713,#e52713);
     background-size: auto 88%,80% 55%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
